@@ -1,0 +1,36 @@
+﻿@model Prepaid_Mobile_Topup_MVC.Models.TopUp
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>TopUp</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MobileAccount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MobileAccount.Number)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TopUpChannel)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TopUpChannel.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TopUpAmount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TopUpAmount)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" class="btn btn-primary" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index" class="btn btn-primary">Back to List</a>
+</div>

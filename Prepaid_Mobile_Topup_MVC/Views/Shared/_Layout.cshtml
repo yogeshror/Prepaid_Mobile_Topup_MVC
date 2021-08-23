@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Yoga Studio Template">
+    <meta name="keywords" content="Yoga, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Prepaid Mobile Top Ups</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="/Content/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/Content/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/Content/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="/Content/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="/Content/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="/Content/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="/Content/css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="inner-header">
+                <div class="logo">
+                    <a href="/"><h3>Prepaid Mobile Top Ups</h3></a>
+                </div>
+
+                <nav class="main-menu mobile-menu">
+                    <ul>
+                        <li><a class="active btn btn-outline-info" href="/">Home</a></li>
+
+                        <li><a class="btn btn-outline-info" href="/PrepaidCustomers/Index">Prepaid Customers</a></li>
+                        <li><a class="btn btn-outline-info" href="/MobileAccounts/Index">Mobile Accounts</a></li>
+
+                        <li><a class="btn btn-outline-info" href="/TopUps/Index">Top Ups</a></li>
+                        <li><a class="btn btn-outline-info" href="/TopUpChannels/Index">Top Up Channels</a></li>
+
+                        <partial name="_LoginPartial" />
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header Info Begin -->
+    <!-- Header Info End -->
+    <!-- Header End -->
+
+
+    <div class="container">
+
+
+        @RenderBody()
+    </div>
+
+
+
+    <!-- Js Plugins -->
+    <script src="/Content/js/jquery-3.3.1.min.js"></script>
+    <script src="/Content/js/bootstrap.min.js"></script>
+    <script src="/Content/js/jquery.magnific-popup.min.js"></script>
+    <script src="/Content/js/jquery.slicknav.js"></script>
+    <script src="/Content/js/owl.carousel.min.js"></script>
+    <script src="/Content/js/jquery.nice-select.min.js"></script>
+    <script src="/Content/js/mixitup.min.js"></script>
+    <script src="/Content/js/main.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>
